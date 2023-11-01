@@ -12,5 +12,4 @@ func _process(delta):
 
 # Die _on_pressed-Funktion wird aufgerufen, wenn der Button geklickt wird.
 func _on_pressed():
-	var actual_string = format_string % str(Global.key)
-	self.text = actual_string
+	self.text = format_string % str(Global.key)
