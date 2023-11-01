@@ -1,9 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://ebr71heusmen"]
+[gd_scene load_steps=12 format=3 uid="uid://ebr71heusmen"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_y5pn2"]
 [ext_resource type="Script" path="res://Button1_SUdoku.gd" id="2_08sjk"]
 [ext_resource type="Script" path="res://Button1.gd" id="2_q4iwl"]
 [ext_resource type="Script" path="res://Button2.gd" id="3_48cv4"]
+[ext_resource type="Script" path="res://Button3.gd" id="5_4ood3"]
+[ext_resource type="Script" path="res://Button4.gd" id="6_3x10n"]
+[ext_resource type="Script" path="res://Button5.gd" id="7_jc232"]
+[ext_resource type="Script" path="res://Button6.gd" id="8_uhuhy"]
+[ext_resource type="Script" path="res://Button7.gd" id="9_6atn5"]
+[ext_resource type="Script" path="res://Button8.gd" id="10_8bgvs"]
+[ext_resource type="Script" path="res://Button9.gd" id="11_hb5ko"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_y5pn2")
@@ -123,6 +130,7 @@ offset_right = 419.0
 offset_bottom = 238.0
 theme_override_font_sizes/font_size = 51
 text = "3"
+script = ExtResource("5_4ood3")
 
 [node name="Button4" type="Button" parent="Eingabe"]
 layout_mode = 0
@@ -132,6 +140,7 @@ offset_right = 145.0
 offset_bottom = 370.0
 theme_override_font_sizes/font_size = 51
 text = "4"
+script = ExtResource("6_3x10n")
 
 [node name="Button5" type="Button" parent="Eingabe"]
 layout_mode = 0
@@ -141,6 +150,7 @@ offset_right = 287.0
 offset_bottom = 371.0
 theme_override_font_sizes/font_size = 51
 text = "5"
+script = ExtResource("7_jc232")
 
 [node name="Button6" type="Button" parent="Eingabe"]
 layout_mode = 0
@@ -150,6 +160,7 @@ offset_right = 420.0
 offset_bottom = 370.0
 theme_override_font_sizes/font_size = 51
 text = "6"
+script = ExtResource("8_uhuhy")
 
 [node name="Button7" type="Button" parent="Eingabe"]
 layout_mode = 0
@@ -159,6 +170,7 @@ offset_right = 148.0
 offset_bottom = 499.0
 theme_override_font_sizes/font_size = 51
 text = "7"
+script = ExtResource("9_6atn5")
 
 [node name="Button8" type="Button" parent="Eingabe"]
 layout_mode = 0
@@ -168,6 +180,7 @@ offset_right = 290.0
 offset_bottom = 500.0
 theme_override_font_sizes/font_size = 51
 text = "8"
+script = ExtResource("10_8bgvs")
 
 [node name="Button9" type="Button" parent="Eingabe"]
 layout_mode = 0
@@ -177,6 +190,7 @@ offset_right = 423.0
 offset_bottom = 499.0
 theme_override_font_sizes/font_size = 51
 text = "9"
+script = ExtResource("11_hb5ko")
 
 [connection signal="pressed" from="Sudoku/Button1" to="Sudoku/Button1" method="_on_pressed"]
 [connection signal="text_set" from="Sudoku/TextEdit2" to="." method="_on_text_edit_2_text_set"]
