@@ -120,10 +120,10 @@ text = "9"
 script = ExtResource("11_hb5ko")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-offset_left = 20.0
-offset_top = 1255.0
-offset_right = 620.0
-offset_bottom = 1255.0
+offset_left = 32.0
+offset_top = 25.0
+offset_right = 632.0
+offset_bottom = 625.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
 layout_mode = 2
@@ -140,535 +140,55 @@ theme_override_constants/h_separation = 15
 theme_override_constants/v_separation = 15
 columns = 3
 
-[node name="Button1" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
+[node name="00" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 script = ExtResource("11_csa1k")
 
-[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
+[node name="01" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 script = ExtResource("11_csa1k")
 
-[node name="Button3" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
+[node name="02" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 script = ExtResource("11_csa1k")
 
-[node name="Button4" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
+[node name="03" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 script = ExtResource("11_csa1k")
 
-[node name="Button5" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
+[node name="04" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 script = ExtResource("11_csa1k")
 
-[node name="Button6" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
+[node name="05" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 script = ExtResource("11_csa1k")
 
-[node name="Button7" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
+[node name="06" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 script = ExtResource("11_csa1k")
 
-[node name="Button8" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
+[node name="07" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 script = ExtResource("11_csa1k")
 
-[node name="Button9" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Quadrant2" type="GridContainer" parent="HBoxContainer/VBoxContainer/Quadranten"]
-layout_mode = 2
-theme_override_constants/h_separation = 15
-theme_override_constants/v_separation = 15
-columns = 3
-
-[node name="Button1" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant2"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant2"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button3" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant2"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button4" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant2"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button5" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant2"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button6" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant2"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button7" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant2"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button8" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant2"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button9" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant2"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Quadrant3" type="GridContainer" parent="HBoxContainer/VBoxContainer/Quadranten"]
-layout_mode = 2
-theme_override_constants/h_separation = 15
-theme_override_constants/v_separation = 15
-columns = 3
-
-[node name="Button1" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant3"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant3"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button3" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant3"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button4" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant3"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button5" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant3"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button6" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant3"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button7" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant3"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button8" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant3"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button9" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant3"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Quadrant4" type="GridContainer" parent="HBoxContainer/VBoxContainer/Quadranten"]
-layout_mode = 2
-theme_override_constants/h_separation = 15
-theme_override_constants/v_separation = 15
-columns = 3
-
-[node name="Button1" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant4"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant4"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button3" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant4"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button4" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant4"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button5" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant4"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button6" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant4"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button7" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant4"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button8" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant4"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button9" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant4"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Quadrant5" type="GridContainer" parent="HBoxContainer/VBoxContainer/Quadranten"]
-layout_mode = 2
-theme_override_constants/h_separation = 15
-theme_override_constants/v_separation = 15
-columns = 3
-
-[node name="Button1" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant5"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant5"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button3" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant5"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button4" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant5"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button5" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant5"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button6" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant5"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button7" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant5"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button8" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant5"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button9" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant5"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Quadrant6" type="GridContainer" parent="HBoxContainer/VBoxContainer/Quadranten"]
-layout_mode = 2
-theme_override_constants/h_separation = 15
-theme_override_constants/v_separation = 15
-columns = 3
-
-[node name="Button1" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant6"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant6"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button3" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant6"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button4" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant6"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button5" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant6"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button6" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant6"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button7" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant6"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button8" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant6"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button9" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant6"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Quadrant7" type="GridContainer" parent="HBoxContainer/VBoxContainer/Quadranten"]
-layout_mode = 2
-theme_override_constants/h_separation = 15
-theme_override_constants/v_separation = 15
-columns = 3
-
-[node name="Button1" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant7"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant7"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button3" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant7"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button4" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant7"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button5" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant7"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button6" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant7"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button7" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant7"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button8" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant7"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button9" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant7"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Quadrant8" type="GridContainer" parent="HBoxContainer/VBoxContainer/Quadranten"]
-layout_mode = 2
-theme_override_constants/h_separation = 15
-theme_override_constants/v_separation = 15
-columns = 3
-
-[node name="Button1" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant8"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant8"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button3" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant8"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button4" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant8"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button5" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant8"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button6" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant8"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button7" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant8"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button8" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant8"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button9" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant8"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Quadrant9" type="GridContainer" parent="HBoxContainer/VBoxContainer/Quadranten"]
-layout_mode = 2
-theme_override_constants/h_separation = 15
-theme_override_constants/v_separation = 15
-columns = 3
-
-[node name="Button1" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant9"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant9"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button3" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant9"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button4" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant9"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button5" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant9"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button6" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant9"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button7" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant9"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button8" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant9"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-script = ExtResource("11_csa1k")
-
-[node name="Button9" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant9"]
+[node name="08" type="Button" parent="HBoxContainer/VBoxContainer/Quadranten/Quadrant1"]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
@@ -683,84 +203,12 @@ script = ExtResource("11_csa1k")
 [connection signal="pressed" from="Eingabe/Button7" to="Eingabe/Button7" method="_on_pressed"]
 [connection signal="pressed" from="Eingabe/Button8" to="Eingabe/Button8" method="_on_pressed"]
 [connection signal="pressed" from="Eingabe/Button9" to="Eingabe/Button9" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button1" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button1" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button2" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button2" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button3" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button3" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button4" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button4" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button5" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button5" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button6" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button6" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button7" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button7" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button8" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button8" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button9" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/Button9" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button1" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button1" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button2" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button2" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button3" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button3" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button4" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button4" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button5" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button5" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button6" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button6" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button7" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button7" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button8" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button8" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button9" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant2/Button9" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button1" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button1" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button2" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button2" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button3" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button3" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button4" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button4" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button5" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button5" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button6" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button6" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button7" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button7" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button8" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button8" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button9" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant3/Button9" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button1" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button1" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button2" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button2" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button3" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button3" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button4" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button4" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button5" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button5" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button6" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button6" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button7" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button7" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button8" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button8" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button9" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant4/Button9" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button1" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button1" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button2" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button2" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button3" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button3" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button4" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button4" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button5" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button5" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button6" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button6" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button7" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button7" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button8" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button8" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button9" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant5/Button9" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button1" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button1" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button2" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button2" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button3" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button3" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button4" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button4" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button5" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button5" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button6" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button6" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button7" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button7" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button8" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button8" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button9" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant6/Button9" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button1" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button1" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button2" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button2" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button3" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button3" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button4" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button4" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button5" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button5" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button6" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button6" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button7" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button7" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button8" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button8" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button9" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant7/Button9" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button1" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button1" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button2" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button2" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button3" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button3" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button4" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button4" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button5" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button5" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button6" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button6" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button7" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button7" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button8" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button8" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button9" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant8/Button9" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button1" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button1" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button2" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button2" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button3" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button3" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button4" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button4" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button5" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button5" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button6" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button6" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button7" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button7" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button8" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button8" method="_on_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button9" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant9/Button9" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/00" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/00" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/01" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/01" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/02" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/02" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/03" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/03" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/04" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/04" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/05" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/05" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/06" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/06" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/07" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/07" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/08" to="HBoxContainer/VBoxContainer/Quadranten/Quadrant1/08" method="_on_pressed"]

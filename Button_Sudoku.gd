@@ -40,10 +40,13 @@ func set_numbers():
 		print(str_index)
 		
 		var gridContainer = $HBoxContainer/VBoxContainer/Quadranten
+		print(gridContainer)
 		
-		for Quadrant in gridContainer.get_children():
+		for Quadrant in get_children():
 			print(Quadrant)
 		
-		#var square1 = ["00", "01"]
+		
+		var square1 = ["00", "01", "02", "03", "04", "05", "06", "07", "08"]
+		
 		
 		
