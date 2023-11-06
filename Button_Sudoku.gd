@@ -32,21 +32,25 @@ func set_Wert():
 
 
 func set_numbers():
-	for i in range(0,81):
-		var row = int(i/9)
-		var col = i%9
-		
-		var str_index = str(row)+str(col)
-		print(str_index)
-		
-		var gridContainer = $HBoxContainer/VBoxContainer/Quadranten
-		print(gridContainer)
-		
-		for Quadrant in get_children():
-			print(Quadrant)
-		
-		
-		var square1 = ["00", "01", "02", "03", "04", "05", "06", "07", "08"]
-		
+	
+	var gridContainer = $HBoxContainer/VBoxContainer/Quadranten/Quadrant1
+	print(gridContainer.get_children())
+
+#
+#	for i in range(0,8):
+#		var row = int(i/9)
+#		var col = i%9
+#
+#		var str_index = str(row)+str(col)
+#		print(str_index)
+#
+#		var gridContainer = $HBoxContainer/VBoxContainer/Quadranten/Quadrant1
+#		print(gridContainer.get_children())
+#
+#
+#
+#
+#		var square1 = ["00", "01", "02", "03", "04", "05", "06", "07", "08"]
+
 		
 		
