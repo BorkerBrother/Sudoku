@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://ebr71heusmen"]
+[gd_scene load_steps=14 format=3 uid="uid://ebr71heusmen"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_y5pn2"]
 [ext_resource type="Script" path="res://Button1.gd" id="2_q4iwl"]
@@ -11,7 +11,8 @@
 [ext_resource type="Script" path="res://Button8.gd" id="10_8bgvs"]
 [ext_resource type="Script" path="res://Button_Sudoku.gd" id="11_csa1k"]
 [ext_resource type="Script" path="res://Button9.gd" id="11_hb5ko"]
-[ext_resource type="Texture2D" uid="uid://c1o55eux7vi6y" path="res://3schwestern.jpg" id="12_icmpl"]
+[ext_resource type="Texture2D" uid="uid://c1o55eux7vi6y" path="res://assets/3schwestern.jpg" id="12_xfccc"]
+[ext_resource type="Texture2D" uid="uid://byo0hg42yytjj" path="res://assets/kisspng-coffee-cup-espresso-coffee-cup-5ac9241b988209.0008526315231314196247.png" id="13_dx3sn"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_y5pn2")
@@ -678,7 +679,20 @@ script = ExtResource("11_csa1k")
 [node name="3Schwestern" type="Sprite2D" parent="."]
 position = Vector2(1079, 63)
 scale = Vector2(0.1, 0.1)
-texture = ExtResource("12_icmpl")
+texture = ExtResource("12_xfccc")
+
+[node name="Kisspng-coffee-cup-espresso-coffee-cup-5Ac9241b988209_0008526315231314196247" type="Sprite2D" parent="."]
+position = Vector2(722, 58)
+scale = Vector2(0.176364, 0.167727)
+texture = ExtResource("13_dx3sn")
+
+[node name="Label" type="Label" parent="Kisspng-coffee-cup-espresso-coffee-cup-5Ac9241b988209_0008526315231314196247"]
+offset_left = -96.3921
+offset_right = 181.608
+offset_bottom = 358.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 200
+text = "3"
 
 [connection signal="pressed" from="Eingabe/Button" to="Eingabe/Button" method="_on_pressed"]
 [connection signal="pressed" from="Eingabe/Button2" to="Eingabe/Button2" method="_on_pressed"]

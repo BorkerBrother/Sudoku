@@ -1,13 +1,19 @@
 extends Button
 
+
 var format_string = "%s"
 var key = 0;
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	set_numbers()
-	load_sudoku()
+	if Global.sudoku_loaded == false:
+		load_sudoku()
+		Global.sudoku_loaded = true
+		
+	if not Global.set_numbers:
+		set_numbers()
+		Global.set_numbers = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -20,72 +26,56 @@ func _on_pressed():
 	key = Global.key
 
 
-# get wert zurück gibt funktion 
-
-func get_Wert():
-	#if key = 0 print not set 
-	return key
-
-# set wert funkltion
-func set_Wert():
-	return key
-# klasse ( aufrufen )
-
-
 
 func set_numbers():
 	
 	var gridContainer = $"/root/World/HBoxContainer/VBoxContainer/Quadranten"
-
-
-# // Get Buttons 
+	
+	# // Get Buttons 
 	var quadranten = gridContainer.get_children()
 	
 	# Quadranten 0-8 
 	for i in range(0,9):
-		#print(quadranten[i])
-		
 		#Buttons 0-8
 		var buttons = quadranten[i]
 		for j in range (0,9):
-			
 			#PRINT Values
 			var button = buttons.get_child(j)
-			button.text = str(j+1)
-			#print(button)
+			if Global.sudoku_key[i][j] > "0" :
+				button.text = str(Global.sudoku_key[i][j])
+			
+			
+			
 	
+	Global.set_numbers = true 
 
 #LADE SUDOKU
 func load_sudoku():
+	
+		# Sudoku-Array initialisieren
+	for i in range(9):
+		var row = []
+		for j in range(9):
+			row.append(0)
+		Global.sudoku_key.append(row)
+	print(Global.sudoku_key)
+	
 	var json_path = "res://data/test_spiel_1.json"
 	var json_resource = ResourceLoader.load(json_path)
-
 	if json_resource:
 		var json_data = json_resource.get_data()
 		
 		if json_data.has("puzzle"):
 			var puzzle = json_data["puzzle"]
-			for i in range(0,8):
-				#print(puzzle[i])
-				
-				for j in range(0,8):
-					print(puzzle[i][j])
-					Global.sudoku_key[i][j] = puzzle[i][j] # puzzle x = 0 , y = 0 wert -> 5
-		
-#		var json_text = json_data.get_as_text()
-#
-#		var json_parser = JSON.new()
-#		var result = json_parser.parse(json_text)
-#		var json_dict = result.result
-#		if json_dict.has("puzzle"):
-#
-#			var puzzle = json_dict["puzzle"]
-#			print(puzzle)
+			for i in range(9):
+				for j in range(9):
+					if not Global.sudoku_loaded:
+						Global.sudoku_key[i][j] = str(puzzle[i][j]) # puzzle x = 0 , y = 0 wert -> 5
+				print(Global.sudoku_key[i])
+				if i == 8:
+					Global.sudoku_loaded = true
+					print(Global.sudoku_key)
+					break
 
-			# Verwenden Sie die Daten, um die Buttons zu füllen oder weitere Aktionen durchzuführen.
-		else:
-			print("JSON-Datei enthält keine 'puzzle'-Daten.")
-	else:
-		print("Fehler beim Laden der JSON-Datei.")
-	
+
 
