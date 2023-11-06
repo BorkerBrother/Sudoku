@@ -3,9 +3,11 @@ extends Button
 var format_string = "%s"
 var key = 0;
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	set_numbers()
+	load_sudoku()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -33,24 +35,57 @@ func set_Wert():
 
 func set_numbers():
 	
-	var gridContainer = $"/root/World/HBoxContainer/VBoxContainer/Quadranten/Quadrant1"
+	var gridContainer = $"/root/World/HBoxContainer/VBoxContainer/Quadranten"
 
 
-	var children = gridContainer.get_children()
-	for i in range(1,10):
-		var button = children[i-1]
-		button.text = str(i)
-#
-#	for i in range(0,8):
-#		var row = int(i/9)
-#		var col = i%9
-#
-#		var str_index = str(row)+str(col)
-#		print(str_index)
-#
-#		var gridContainer = $HBoxContainer/VBoxContainer/Quadranten/Quadrant1
-#		print(gridContainer.get_children())
-#
-#		var square1 = ["00", "01", "02", "03", "04", "05", "06", "07", "08"]
+# // Get Buttons 
+	var quadranten = gridContainer.get_children()
+	
+	# Quadranten 0-8 
+	for i in range(0,9):
+		#print(quadranten[i])
 		
+		#Buttons 0-8
+		var buttons = quadranten[i]
+		for j in range (0,9):
+			
+			#PRINT Values
+			var button = buttons.get_child(j)
+			button.text = str(j+1)
+			#print(button)
+	
+
+#LADE SUDOKU
+func load_sudoku():
+	var json_path = "res://data/test_spiel_1.json"
+	var json_resource = ResourceLoader.load(json_path)
+
+	if json_resource:
+		var json_data = json_resource.get_data()
 		
+		if json_data.has("puzzle"):
+			var puzzle = json_data["puzzle"]
+			for i in range(0,8):
+				#print(puzzle[i])
+				
+				for j in range(0,8):
+					print(puzzle[i][j])
+					Global.sudoku_key[i][j] = puzzle[i][j] # puzzle x = 0 , y = 0 wert -> 5
+		
+#		var json_text = json_data.get_as_text()
+#
+#		var json_parser = JSON.new()
+#		var result = json_parser.parse(json_text)
+#		var json_dict = result.result
+#		if json_dict.has("puzzle"):
+#
+#			var puzzle = json_dict["puzzle"]
+#			print(puzzle)
+
+			# Verwenden Sie die Daten, um die Buttons zu füllen oder weitere Aktionen durchzuführen.
+		else:
+			print("JSON-Datei enthält keine 'puzzle'-Daten.")
+	else:
+		print("Fehler beim Laden der JSON-Datei.")
+	
+
