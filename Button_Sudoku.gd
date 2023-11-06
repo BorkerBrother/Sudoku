@@ -5,7 +5,7 @@ var key = 0;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-		set_numbers()
+	set_numbers()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -33,9 +33,13 @@ func set_Wert():
 
 func set_numbers():
 	
-	var gridContainer = $HBoxContainer/VBoxContainer/Quadranten/Quadrant1
-	print(gridContainer.get_children())
+	var gridContainer = $"/root/World/HBoxContainer/VBoxContainer/Quadranten/Quadrant1"
 
+
+	var children = gridContainer.get_children()
+	for i in range(1,10):
+		var button = children[i-1]
+		button.text = str(i)
 #
 #	for i in range(0,8):
 #		var row = int(i/9)
@@ -47,10 +51,6 @@ func set_numbers():
 #		var gridContainer = $HBoxContainer/VBoxContainer/Quadranten/Quadrant1
 #		print(gridContainer.get_children())
 #
-#
-#
-#
 #		var square1 = ["00", "01", "02", "03", "04", "05", "06", "07", "08"]
-
 		
 		
