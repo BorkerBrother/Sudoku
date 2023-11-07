@@ -34,16 +34,16 @@ func set_numbers():
 	# // Get Buttons 
 	var quadranten = gridContainer.get_children()
 	
-	# Quadranten 0-8 
+	# Quadranten 0-9 
 	for i in range(0,9):
-		#Buttons 0-8
-		var buttons = quadranten[i]
+		#Buttons 0-9
+		var quadrant = quadranten[i]
 		for j in range (0,9):
 			#PRINT Values
-			var button = buttons.get_child(j)
+			var button = quadrant.get_child(j)
 			if Global.sudoku_key[i][j] > "0" :
 				button.text = str(Global.sudoku_key[i][j])
-			
+				
 			
 			
 	
@@ -58,7 +58,7 @@ func load_sudoku():
 		for j in range(9):
 			row.append(0)
 		Global.sudoku_key.append(row)
-	print(Global.sudoku_key)
+	#print(Global.sudoku_key)
 	
 	var json_path = "res://data/test_spiel_1.json"
 	var json_resource = ResourceLoader.load(json_path)
@@ -74,7 +74,7 @@ func load_sudoku():
 				print(Global.sudoku_key[i])
 				if i == 8:
 					Global.sudoku_loaded = true
-					print(Global.sudoku_key)
+					#print(Global.sudoku_key)
 					break
 
 
