@@ -24,11 +24,8 @@ func _on_pressed():
 	if self.text > "0":
 		print("already set")
 	else:
+		# ÜBERPRÜFE SUDOKU WERTE FUNKTION 
 		self.text = str(key)
-		
-		
-
-
 
 func set_numbers():
 	
@@ -80,5 +77,12 @@ func load_sudoku():
 					#print(Global.sudoku_key)
 					break
 
-
+func is_CoordinateProofed():
+	#schreibe werte in array 
+	# if set give back set in row- line or quad 
+	
+	#Row
+	for i in range(0,9):
+		Global.sudoku_key
+	var test=0
 
