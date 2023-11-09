@@ -30,23 +30,24 @@ func _on_pressed():
 func set_numbers():
 	
 	var gridContainer = $"/root/World/HBoxContainer/VBoxContainer/Quadranten"
-	
 	# // Get Buttons 
 	var quadranten = gridContainer.get_children()
-	
 	# Quadranten 0-9 
 	for i in range(0,9):
 		#Buttons 0-9
-		var quadrant = quadranten[i]
+		var quadrant = quadranten[0]
+		
 		for j in range (0,9):
 			#PRINT Values
 			var button = quadrant.get_child(j)
+			
+			
+			
+			button.get_node("Label").text = str(Global.sudoku_key[i][j])
+			
+			
 			if Global.sudoku_key[i][j] > "0" :
 				button.text = str(Global.sudoku_key[i][j])
-				
-			
-			
-	
 	Global.set_numbers = true 
 
 #LADE SUDOKU

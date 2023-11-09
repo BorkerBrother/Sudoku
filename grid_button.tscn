@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2k60b5cr4uvc"]
+
+[ext_resource type="Script" path="res://Button_Sudoku.gd" id="1_2g0m8"]
+
+[node name="GridButton" type="Button"]
+custom_minimum_size = Vector2(50, 50)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1104.0
+offset_bottom = -600.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 30
+script = ExtResource("1_2g0m8")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = -23.0
+offset_right = 49.0
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
