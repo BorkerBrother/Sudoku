@@ -38,23 +38,30 @@ func set_numbers():
 	var quadranten = gridContainer.get_children()
 	
 	var square1 = ["01","02","03","10","11","12","19","20","21"]
-	
+	var square2 = ["04","05","06","13","14","15","22","23","21"]
 	
 	# Quadranten 0-9 
-	print("Buttons:")
-	for i in range(0,9):
+	#print("Buttons:")
+	for i in range(0,81):
 		#Buttons 0-9
-		var quadrant = quadranten[i]
-		for j in range (0,9):
 			#PRINT Values
-			var button = quadrant.get_child(j)
+			var row = i%9
+			var line = i/9 
+			
+			var quadrant = quadranten[line]
+			
+			var button = quadrant.get_child(row)
 			#button.name = str(Global.sudoku_key[i][j])
-			print(button.name)
+			#print(button.name)
 			button.get_node("Label").text = str(button.name)
 			
 			
-			if Global.sudoku_key[i][j] > "0" :
-				button.text = str(Global.sudoku_key[i][j])
+			if Global.sudoku_key[row][line] > "0" : 
+				
+				button.text = str(Global.sudoku_key[row][line]) 
+			
+	
+	
 	Global.set_numbers = true 
 
 #LADE SUDOKU
