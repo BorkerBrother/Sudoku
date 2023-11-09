@@ -21,29 +21,36 @@ func _on_pressed():
 	
 	key = Global.key
 	
+	
+	var button = self.name
+	
 	if self.text > "0":
 		print("already set")
 	else:
+		if is_CoordinateProofed(button,key):
 		# ÜBERPRÜFE SUDOKU WERTE FUNKTION 
-		self.text = str(key)
+			self.text = str(key)
 
 func set_numbers():
 	
 	var gridContainer = $"/root/World/HBoxContainer/VBoxContainer/Quadranten"
 	# // Get Buttons 
 	var quadranten = gridContainer.get_children()
+	
+	var square1 = ["01","02","03","10","11","12","19","20","21"]
+	
+	
 	# Quadranten 0-9 
+	print("Buttons:")
 	for i in range(0,9):
 		#Buttons 0-9
-		var quadrant = quadranten[0]
-		
+		var quadrant = quadranten[i]
 		for j in range (0,9):
 			#PRINT Values
 			var button = quadrant.get_child(j)
-			
-			
-			
-			button.get_node("Label").text = str(Global.sudoku_key[i][j])
+			#button.name = str(Global.sudoku_key[i][j])
+			print(button.name)
+			button.get_node("Label").text = str(button.name)
 			
 			
 			if Global.sudoku_key[i][j] > "0" :
@@ -52,7 +59,7 @@ func set_numbers():
 
 #LADE SUDOKU
 func load_sudoku():
-	
+	print("Load Sudoku:")
 		# Sudoku-Array initialisieren
 	for i in range(9):
 		var row = []
@@ -78,12 +85,22 @@ func load_sudoku():
 					#print(Global.sudoku_key)
 					break
 
-func is_CoordinateProofed():
+func is_CoordinateProofed(button,key):
 	#schreibe werte in array 
 	# if set give back set in row- line or quad 
 	
-	#Row
+	var y = 0
+	var row1 = ["01","02","03","04","05","06","07","08","09"]
+	
+	if row1.has(button):
+		y=0
+		
+	
+	#Check Row 
 	for i in range(0,9):
-		Global.sudoku_key
-	var test=0
+		if Global.sudoku_key[y][i] == str(key):
+			print("Alreday set in Row") 
+			return false
+	#test.text ="1"
+	return true
 
