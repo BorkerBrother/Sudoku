@@ -49,16 +49,15 @@ func set_numbers():
 			var line = i/9 
 			
 			var quadrant = quadranten[line]
-			
-			var button = quadrant.get_child(row)
+			var button = quadrant.get_child(row) # z.b 1,2,3,10,11,12,19,20,21
 			#button.name = str(Global.sudoku_key[i][j])
 			#print(button.name)
 			button.get_node("Label").text = str(button.name)
 			
 			
-			if Global.sudoku_key[row][line] > "0" : 
+			if Global.sudoku_key[line][row] > "0" : 
 				
-				button.text = str(Global.sudoku_key[row][line]) 
+				button.text = str(Global.sudoku_key[line][row]) 
 			
 	
 	
