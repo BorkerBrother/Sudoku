@@ -97,7 +97,15 @@ func is_CoordinateProofed(button,key):
 			return false
 	
 	#Check Quadrant 
+	var start_row = 3 * (line / 3)
+	var start_col = 3 * (row / 3)
 	
+	# Check the 3x3 quadrant
+	for i in range(start_row, start_row + 3):
+		for j in range(start_col, start_col + 3):
+			if Global.sudoku_key[i][j] == str(key):
+				print("Already set in Quadrant")
+				return false
 	
 	return true
 
