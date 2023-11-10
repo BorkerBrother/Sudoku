@@ -20,9 +20,7 @@ func _process(delta):
 func _on_pressed():
 	
 	key = Global.key
-	
-	
-	var button = self.name
+	var button = (self.name).to_int()
 	
 	if self.text > "0":
 		print("already set")
@@ -34,33 +32,21 @@ func _on_pressed():
 func set_numbers():
 	
 	var gridContainer = $"/root/World/HBoxContainer/VBoxContainer/Quadranten"
-	# // Get Buttons 
 	var quadranten = gridContainer.get_children()
-	
-	var square1 = ["01","02","03","10","11","12","19","20","21"]
-	var square2 = ["04","05","06","13","14","15","22","23","21"]
-	
 	# Quadranten 0-9 
 	#print("Buttons:")
 	for i in range(0,81):
 		#Buttons 0-9
-			#PRINT Values
 			var row = i%9
 			var line = i/9 
 			
 			var quadrant = quadranten[line]
-			var button = quadrant.get_child(row) # z.b 1,2,3,10,11,12,19,20,21
-			#button.name = str(Global.sudoku_key[i][j])
-			#print(button.name)
+			var button = quadrant.get_child(row)
 			button.get_node("Label").text = str(button.name)
 			
-			
 			if Global.sudoku_key[line][row] > "0" : 
-				
 				button.text = str(Global.sudoku_key[line][row]) 
-			
-	
-	
+				
 	Global.set_numbers = true 
 
 #LADE SUDOKU
@@ -94,45 +80,24 @@ func load_sudoku():
 func is_CoordinateProofed(button,key):
 	#schreibe werte in array 
 	# if set give back set in row- line or quad 
-	var y = 0
-	var x = 0
-	var row1 = ["01","02","03","04","05","06","07","08","09"]
-	var row2 = ["10","11","12","13","14","15","16","17","18"]
-	var row3 = ["19","20","21","22","23","24","25","26","27"]
 	
-	var row4 = ["28","29","30","31","32","33","34","35","36"]
-	var row5 = ["37","38","39","40","41","42","43","44","45"]
-	var row6 = ["46","47","48","49","50","51","52","53","54"]
+	var row = button%9
+	var line = button/9 
 	
-	var row7 = ["55","56","57","58","59","60","61","62","63"]
-	var row8 = ["64","65","66","67","68","69","70","71","72"]
-	var row9 = ["73","74","75","76","77","78","79","80","81"]
-	
-	
-	#var row = int(button)/9
-	if row1.has(button):
-		y=0
-	if row2.has(button):
-		y=1
-	if row3.has(button):
-		y=2
-	if row4.has(button):
-		y=3
-	if row5.has(button):
-		y=4
-	if row6.has(button):
-		y=5
-	if row7.has(button):
-		y=6
-	if row8.has(button):
-		y=7
-	if row9.has(button):
-		y=8
 	#Check Row 
-	for i in range(0,9):
-		if Global.sudoku_key[y][i] == str(key):
+	for i in range (0,9):
+		if Global.sudoku_key[line][i] == str(key):
 			print("Alreday set in Row") 
 			return false
-	#test.text ="1"
+	
+	#Check Line 
+	for i in range (0,9):
+		if Global.sudoku_key[i][row] == str(key):
+			print("Alreday set in Line") 
+			return false
+	
+	#Check Quadrant 
+	
+	
 	return true
 
