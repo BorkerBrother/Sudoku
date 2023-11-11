@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="Sudoku"
-run/main_scene="res://main.tscn"
+run/main_scene="res://Game/Start/main.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://assets/icon.svg"
 
 [autoload]
 
-Global="*res://world.gd"
+Global="*res://Game/Sudoku/world.gd"
 
 [rendering]
 

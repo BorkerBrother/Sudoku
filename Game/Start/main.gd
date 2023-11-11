@@ -1,5 +1,7 @@
 extends Node2D
 
+var map1 = "res://Game/Sudoku/world.tscn"
+var map2 = "res://Game/Sudoku/world.tscn"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -16,4 +18,10 @@ func _on_button_2_pressed():
 
 
 func _on_button_pressed():
-	get_tree().change_scene_to_file("res://world.tscn")
+	var map 
+	if Global.level == 1:
+		map = map1
+	if Global.level == 2:
+		map = map2
+	
+	get_tree().change_scene_to_file(map)

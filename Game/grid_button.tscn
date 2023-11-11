@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b2k60b5cr4uvc"]
 
-[ext_resource type="Script" path="res://Button_Sudoku.gd" id="1_2g0m8"]
 [ext_resource type="Theme" uid="uid://ope2w05yuu1h" path="res://Theme/new_theme_Eingabe.tres" id="1_ef0et"]
+[ext_resource type="Script" path="res://Game/Sudoku/Button_Sudoku.gd" id="2_qeuq6"]
 
 [node name="GridButton" type="Button"]
 custom_minimum_size = Vector2(50, 50)
@@ -15,7 +15,7 @@ grow_vertical = 2
 theme = ExtResource("1_ef0et")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 30
-script = ExtResource("1_2g0m8")
+script = ExtResource("2_qeuq6")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
