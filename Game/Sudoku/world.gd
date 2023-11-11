@@ -6,7 +6,7 @@ var key = 0
 var sudoku_key = []
 var sudoku_loaded = false
 var set_numbers = false
-var level = 1
+var level = 3
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

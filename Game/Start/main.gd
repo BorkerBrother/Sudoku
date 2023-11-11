@@ -14,11 +14,16 @@ func _process(delta):
 
 
 func _on_button_2_pressed():
+	var Container = $"/root/Main/Quadranten1"
+	for i in range (0,Global.level):
+		var button = Container.get_child(i)
+		button.pressed = true
+		
 	get_tree().quit()
 
 
 func _on_button_pressed():
-	var map 
+	var map =map1
 	if Global.level == 1:
 		map = map1
 	if Global.level == 2:
