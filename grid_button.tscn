@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b2k60b5cr4uvc"]
+[gd_scene load_steps=3 format=3 uid="uid://b2k60b5cr4uvc"]
 
 [ext_resource type="Script" path="res://Button_Sudoku.gd" id="1_2g0m8"]
+[ext_resource type="Theme" uid="uid://c5i3yw1br0wvf" path="res://Theme/new_theme.tres" id="1_dliik"]
 
 [node name="GridButton" type="Button"]
 custom_minimum_size = Vector2(50, 50)
@@ -11,6 +12,7 @@ offset_right = -1104.0
 offset_bottom = -600.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_dliik")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 30
 script = ExtResource("1_2g0m8")
@@ -22,5 +24,15 @@ offset_top = 1.0
 offset_right = 49.0
 offset_bottom = 24.0
 theme_override_font_sizes/font_size = 11
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+show_behind_parent = true
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 49.0
+offset_bottom = 49.0
+color = Color(0.807843, 0.560784, 0.341176, 1)
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

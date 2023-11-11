@@ -16,7 +16,7 @@ func _ready():
 func _process(delta):
 	pass
 
-# Die _on_pressed-Funktion wird aufgerufen, wenn der Button geklickt wird.
+# On Sudoku Button Pressed
 func _on_pressed():
 	
 	key = Global.key
@@ -31,6 +31,7 @@ func _on_pressed():
 			
 			set_value(button,key)
 
+#Set Value on Pressed
 func set_value(button, key):
 	var row = button%9
 	var line = button/9 
@@ -38,6 +39,7 @@ func set_value(button, key):
 	Global.sudoku_key[line][row] = str(key)
 	print_Sudoku()
 
+#Set Start Values from Json 
 func set_numbers():
 	
 	var gridContainer = $"/root/World/HBoxContainer/VBoxContainer/Quadranten"
@@ -51,14 +53,14 @@ func set_numbers():
 			
 			var quadrant = quadranten[line]
 			var button = quadrant.get_child(row)
-			button.get_node("Label").text = str(button.name)
+			#button.get_node("Label").text = str(button.name)
 			
 			if Global.sudoku_key[line][row] > "0" : 
 				button.text = str(Global.sudoku_key[line][row]) 
 				
 	Global.set_numbers = true 
 
-#LADE SUDOKU
+#LADE SUDOKU von JSon 
 func load_sudoku():
 	print("Load Sudoku:")
 		# Sudoku-Array initialisieren
@@ -86,6 +88,7 @@ func load_sudoku():
 					#print(Global.sudoku_key)
 					break
 
+# Check Row, Line , Quad
 func is_CoordinateProofed(button,key):
 	#schreibe werte in array 
 	# if set give back set in row- line or quad 
@@ -118,8 +121,12 @@ func is_CoordinateProofed(button,key):
 	
 	return true
 
+# Print Global Sudoku Array
 func print_Sudoku():
 	print("")
 	print("PRINT SUDOKU FUNC: ")
 	for y in range(0,9):
 		print(Global.sudoku_key[y])
+
+func set_notice():
+	var test = 0
