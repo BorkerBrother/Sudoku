@@ -28,6 +28,15 @@ func _on_pressed():
 		if is_CoordinateProofed(button,key):
 		# ÜBERPRÜFE SUDOKU WERTE FUNKTION 
 			self.text = str(key)
+			
+			set_value(button,key)
+
+func set_value(button, key):
+	var row = button%9
+	var line = button/9 
+	
+	Global.sudoku_key[line][row] = str(key)
+	print_Sudoku()
 
 func set_numbers():
 	
@@ -109,3 +118,8 @@ func is_CoordinateProofed(button,key):
 	
 	return true
 
+func print_Sudoku():
+	print("")
+	print("PRINT SUDOKU FUNC: ")
+	for y in range(0,9):
+		print(Global.sudoku_key[y])
