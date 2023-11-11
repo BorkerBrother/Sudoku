@@ -1,6 +1,7 @@
 extends Node2D
 
-
+var note = false
+var button_eingabe
 var key = 0;
 var sudoku_key = []
 var sudoku_loaded = false

@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://ebr71heusmen"]
+[gd_scene load_steps=10 format=3 uid="uid://ebr71heusmen"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_y5pn2"]
 [ext_resource type="Theme" uid="uid://c5i3yw1br0wvf" path="res://Theme/new_theme.tres" id="2_n21nu"]
 [ext_resource type="Script" path="res://Button_eingabe.gd" id="3_43itk"]
+[ext_resource type="Script" path="res://Notebutton.gd" id="5_vcq42"]
 [ext_resource type="PackedScene" uid="uid://b2k60b5cr4uvc" path="res://grid_button.tscn" id="11_qgs1k"]
 [ext_resource type="Texture2D" uid="uid://c1o55eux7vi6y" path="res://assets/3schwestern.jpg" id="12_xfccc"]
 [ext_resource type="Texture2D" uid="uid://byo0hg42yytjj" path="res://assets/kisspng-coffee-cup-espresso-coffee-cup-5ac9241b988209.0008526315231314196247.png" id="13_dx3sn"]
@@ -32,6 +33,7 @@ offset_right = 161.0
 offset_bottom = 257.0
 theme = ExtResource("2_n21nu")
 theme_override_font_sizes/font_size = 51
+toggle_mode = true
 text = "1"
 script = ExtResource("3_43itk")
 
@@ -41,7 +43,10 @@ offset_left = 195.0
 offset_top = 150.0
 offset_right = 303.0
 offset_bottom = 258.0
+theme = ExtResource("2_n21nu")
 theme_override_font_sizes/font_size = 51
+toggle_mode = true
+action_mode = 0
 text = "2"
 script = ExtResource("3_43itk")
 
@@ -51,7 +56,9 @@ offset_left = 328.0
 offset_top = 149.0
 offset_right = 436.0
 offset_bottom = 257.0
+theme = ExtResource("2_n21nu")
 theme_override_font_sizes/font_size = 51
+toggle_mode = true
 text = "3"
 script = ExtResource("3_43itk")
 
@@ -61,7 +68,9 @@ offset_left = 54.0
 offset_top = 281.0
 offset_right = 162.0
 offset_bottom = 389.0
+theme = ExtResource("2_n21nu")
 theme_override_font_sizes/font_size = 51
+toggle_mode = true
 text = "4"
 script = ExtResource("3_43itk")
 
@@ -73,6 +82,7 @@ offset_right = 304.0
 offset_bottom = 390.0
 theme = ExtResource("2_n21nu")
 theme_override_font_sizes/font_size = 51
+toggle_mode = true
 text = "5"
 script = ExtResource("3_43itk")
 
@@ -82,7 +92,9 @@ offset_left = 329.0
 offset_top = 281.0
 offset_right = 437.0
 offset_bottom = 389.0
+theme = ExtResource("2_n21nu")
 theme_override_font_sizes/font_size = 51
+toggle_mode = true
 text = "6"
 script = ExtResource("3_43itk")
 
@@ -92,7 +104,9 @@ offset_left = 57.0
 offset_top = 410.0
 offset_right = 165.0
 offset_bottom = 518.0
+theme = ExtResource("2_n21nu")
 theme_override_font_sizes/font_size = 51
+toggle_mode = true
 text = "7"
 script = ExtResource("3_43itk")
 
@@ -102,7 +116,9 @@ offset_left = 199.0
 offset_top = 411.0
 offset_right = 307.0
 offset_bottom = 519.0
+theme = ExtResource("2_n21nu")
 theme_override_font_sizes/font_size = 51
+toggle_mode = true
 text = "8"
 script = ExtResource("3_43itk")
 
@@ -112,7 +128,9 @@ offset_left = 332.0
 offset_top = 410.0
 offset_right = 440.0
 offset_bottom = 518.0
+theme = ExtResource("2_n21nu")
 theme_override_font_sizes/font_size = 51
+toggle_mode = true
 text = "9"
 script = ExtResource("3_43itk")
 
@@ -123,8 +141,10 @@ offset_top = 20.0
 offset_right = -331.0
 offset_bottom = -529.0
 theme = ExtResource("2_n21nu")
+toggle_mode = true
+action_mode = 0
 text = "NOTE"
-script = null
+script = ExtResource("5_vcq42")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 offset_left = 32.0

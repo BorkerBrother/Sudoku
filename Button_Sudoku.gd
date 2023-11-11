@@ -22,14 +22,20 @@ func _on_pressed():
 	key = Global.key
 	var button = (self.name).to_int()
 	
-	if self.text > "0":
-		print("already set")
+	
+	if Global.note == false:
+		if self.text > "0":
+			print("already set")
+		else:
+			if is_CoordinateProofed(button,key):
+			# ÜBERPRÜFE SUDOKU WERTE FUNKTION 
+				self.text = str(key)
+				check_notice(button, key)
+				set_value(button,key)
+	
+	#NOTIZ
 	else:
-		if is_CoordinateProofed(button,key):
-		# ÜBERPRÜFE SUDOKU WERTE FUNKTION 
-			self.text = str(key)
-			
-			set_value(button,key)
+		self.get_node("Label").text = str(key)
 
 #Set Value on Pressed
 func set_value(button, key):
@@ -128,5 +134,37 @@ func print_Sudoku():
 	for y in range(0,9):
 		print(Global.sudoku_key[y])
 
-func set_notice():
-	var test = 0
+func check_notice(button, key):
+	
+	var gridContainer = $"/root/World/HBoxContainer/VBoxContainer/Quadranten"
+	var quadranten = gridContainer.get_children()
+	# Quadranten 0-9 
+	#print("Buttons:")
+		#Buttons 0-9
+	var row = button%9
+	var line = button/9 
+	var quadrant = quadranten[line]
+	button = quadrant.get_child(row)
+	
+	#Check Row 
+	for i in range (0,9):
+		if Global.sudoku_key[line][i]:
+			button.get_node("Label").text = "0"
+
+	
+	#Check Line 
+	for i in range (0,9):
+		if Global.sudoku_key[i][row]:
+			button.get_node("Label").text = "0"
+			print("test")
+	
+	#Check Quadrant 
+	var start_row = 3 * (line / 3)
+	var start_col = 3 * (row / 3)
+	
+	# Check the 3x3 quadrant
+	for i in range(start_row, start_row + 3):
+		for j in range(start_col, start_col + 3):
+			if Global.sudoku_key[i][j]:
+				button.get_node("Label").text = "0"
+	

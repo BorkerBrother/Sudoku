@@ -12,8 +12,7 @@ func _process(delta):
 
 
 func _on_pressed():
-	if (Global.button_eingabe != null):
-		Global.button_eingabe.set_pressed(false)
-	Global.key = (self.text).to_int()
-	Global.button_eingabe = self
-	# SET COLOUR 
+	if Global.note == false:
+		Global.note = true
+	else:
+		Global.note = false
