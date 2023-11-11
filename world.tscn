@@ -1,15 +1,8 @@
-[gd_scene load_steps=16 format=3 uid="uid://ebr71heusmen"]
+[gd_scene load_steps=9 format=3 uid="uid://ebr71heusmen"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_y5pn2"]
-[ext_resource type="Script" path="res://Button1.gd" id="2_q4iwl"]
-[ext_resource type="Script" path="res://Button2.gd" id="3_48cv4"]
-[ext_resource type="Script" path="res://Button3.gd" id="5_4ood3"]
-[ext_resource type="Script" path="res://Button4.gd" id="6_3x10n"]
-[ext_resource type="Script" path="res://Button5.gd" id="7_jc232"]
-[ext_resource type="Script" path="res://Button6.gd" id="8_uhuhy"]
-[ext_resource type="Script" path="res://Button7.gd" id="9_6atn5"]
-[ext_resource type="Script" path="res://Button8.gd" id="10_8bgvs"]
-[ext_resource type="Script" path="res://Button9.gd" id="11_hb5ko"]
+[ext_resource type="Theme" uid="uid://c5i3yw1br0wvf" path="res://Theme/new_theme.tres" id="2_n21nu"]
+[ext_resource type="Script" path="res://Button_eingabe.gd" id="3_43itk"]
 [ext_resource type="PackedScene" uid="uid://b2k60b5cr4uvc" path="res://grid_button.tscn" id="11_qgs1k"]
 [ext_resource type="Texture2D" uid="uid://c1o55eux7vi6y" path="res://assets/3schwestern.jpg" id="12_xfccc"]
 [ext_resource type="Texture2D" uid="uid://byo0hg42yytjj" path="res://assets/kisspng-coffee-cup-espresso-coffee-cup-5ac9241b988209.0008526315231314196247.png" id="13_dx3sn"]
@@ -31,17 +24,18 @@ offset_right = 1152.0
 offset_bottom = 649.0
 color = Color(0.243137, 0.113725, 0.0784314, 1)
 
-[node name="Button" type="Button" parent="Eingabe"]
+[node name="1" type="Button" parent="Eingabe"]
 layout_mode = 0
 offset_left = 53.0
 offset_top = 149.0
 offset_right = 161.0
 offset_bottom = 257.0
+theme = ExtResource("2_n21nu")
 theme_override_font_sizes/font_size = 51
 text = "1"
-script = ExtResource("2_q4iwl")
+script = ExtResource("3_43itk")
 
-[node name="Button2" type="Button" parent="Eingabe"]
+[node name="2" type="Button" parent="Eingabe"]
 layout_mode = 0
 offset_left = 195.0
 offset_top = 150.0
@@ -49,9 +43,9 @@ offset_right = 303.0
 offset_bottom = 258.0
 theme_override_font_sizes/font_size = 51
 text = "2"
-script = ExtResource("3_48cv4")
+script = ExtResource("3_43itk")
 
-[node name="Button3" type="Button" parent="Eingabe"]
+[node name="3" type="Button" parent="Eingabe"]
 layout_mode = 0
 offset_left = 328.0
 offset_top = 149.0
@@ -59,9 +53,9 @@ offset_right = 436.0
 offset_bottom = 257.0
 theme_override_font_sizes/font_size = 51
 text = "3"
-script = ExtResource("5_4ood3")
+script = ExtResource("3_43itk")
 
-[node name="Button4" type="Button" parent="Eingabe"]
+[node name="4" type="Button" parent="Eingabe"]
 layout_mode = 0
 offset_left = 54.0
 offset_top = 281.0
@@ -69,19 +63,20 @@ offset_right = 162.0
 offset_bottom = 389.0
 theme_override_font_sizes/font_size = 51
 text = "4"
-script = ExtResource("6_3x10n")
+script = ExtResource("3_43itk")
 
-[node name="Button5" type="Button" parent="Eingabe"]
+[node name="5" type="Button" parent="Eingabe"]
 layout_mode = 0
 offset_left = 196.0
 offset_top = 282.0
 offset_right = 304.0
 offset_bottom = 390.0
+theme = ExtResource("2_n21nu")
 theme_override_font_sizes/font_size = 51
 text = "5"
-script = ExtResource("7_jc232")
+script = ExtResource("3_43itk")
 
-[node name="Button6" type="Button" parent="Eingabe"]
+[node name="6" type="Button" parent="Eingabe"]
 layout_mode = 0
 offset_left = 329.0
 offset_top = 281.0
@@ -89,9 +84,9 @@ offset_right = 437.0
 offset_bottom = 389.0
 theme_override_font_sizes/font_size = 51
 text = "6"
-script = ExtResource("8_uhuhy")
+script = ExtResource("3_43itk")
 
-[node name="Button7" type="Button" parent="Eingabe"]
+[node name="7" type="Button" parent="Eingabe"]
 layout_mode = 0
 offset_left = 57.0
 offset_top = 410.0
@@ -99,9 +94,9 @@ offset_right = 165.0
 offset_bottom = 518.0
 theme_override_font_sizes/font_size = 51
 text = "7"
-script = ExtResource("9_6atn5")
+script = ExtResource("3_43itk")
 
-[node name="Button8" type="Button" parent="Eingabe"]
+[node name="8" type="Button" parent="Eingabe"]
 layout_mode = 0
 offset_left = 199.0
 offset_top = 411.0
@@ -109,9 +104,9 @@ offset_right = 307.0
 offset_bottom = 519.0
 theme_override_font_sizes/font_size = 51
 text = "8"
-script = ExtResource("10_8bgvs")
+script = ExtResource("3_43itk")
 
-[node name="Button9" type="Button" parent="Eingabe"]
+[node name="9" type="Button" parent="Eingabe"]
 layout_mode = 0
 offset_left = 332.0
 offset_top = 410.0
@@ -119,7 +114,17 @@ offset_right = 440.0
 offset_bottom = 518.0
 theme_override_font_sizes/font_size = 51
 text = "9"
-script = ExtResource("11_hb5ko")
+script = ExtResource("3_43itk")
+
+[node name="NoteButton" parent="Eingabe" instance=ExtResource("11_qgs1k")]
+layout_mode = 1
+offset_left = 56.0
+offset_top = 20.0
+offset_right = -331.0
+offset_bottom = -529.0
+theme = ExtResource("2_n21nu")
+text = "NOTE"
+script = null
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 offset_left = 32.0
@@ -463,12 +468,12 @@ position = Vector2(1081, 67)
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("15_wmcyd")
 
-[connection signal="pressed" from="Eingabe/Button" to="Eingabe/Button" method="_on_pressed"]
-[connection signal="pressed" from="Eingabe/Button2" to="Eingabe/Button2" method="_on_pressed"]
-[connection signal="pressed" from="Eingabe/Button3" to="Eingabe/Button3" method="_on_pressed"]
-[connection signal="pressed" from="Eingabe/Button4" to="Eingabe/Button4" method="_on_pressed"]
-[connection signal="pressed" from="Eingabe/Button5" to="Eingabe/Button5" method="_on_pressed"]
-[connection signal="pressed" from="Eingabe/Button6" to="Eingabe/Button6" method="_on_pressed"]
-[connection signal="pressed" from="Eingabe/Button7" to="Eingabe/Button7" method="_on_pressed"]
-[connection signal="pressed" from="Eingabe/Button8" to="Eingabe/Button8" method="_on_pressed"]
-[connection signal="pressed" from="Eingabe/Button9" to="Eingabe/Button9" method="_on_pressed"]
+[connection signal="pressed" from="Eingabe/1" to="Eingabe/1" method="_on_pressed"]
+[connection signal="pressed" from="Eingabe/2" to="Eingabe/2" method="_on_pressed"]
+[connection signal="pressed" from="Eingabe/3" to="Eingabe/3" method="_on_pressed"]
+[connection signal="pressed" from="Eingabe/4" to="Eingabe/4" method="_on_pressed"]
+[connection signal="pressed" from="Eingabe/5" to="Eingabe/5" method="_on_pressed"]
+[connection signal="pressed" from="Eingabe/6" to="Eingabe/6" method="_on_pressed"]
+[connection signal="pressed" from="Eingabe/7" to="Eingabe/7" method="_on_pressed"]
+[connection signal="pressed" from="Eingabe/8" to="Eingabe/8" method="_on_pressed"]
+[connection signal="pressed" from="Eingabe/9" to="Eingabe/9" method="_on_pressed"]
