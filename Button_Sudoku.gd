@@ -35,7 +35,8 @@ func _on_pressed():
 	
 	#NOTIZ
 	else:
-		self.get_node("Label").text = str(key)
+		if is_CoordinateProofed(button,key):
+			self.get_node("Label").text = str(key)
 
 #Set Value on Pressed
 func set_value(button, key):
@@ -144,19 +145,19 @@ func check_notice(button, key):
 	var row = button%9
 	var line = button/9 
 	var quadrant = quadranten[line]
-	button = quadrant.get_child(row)
+	
 	
 	#Check Row 
 	for i in range (0,9):
-		if Global.sudoku_key[line][i]:
-			button.get_node("Label").text = "0"
+		button = quadrant.get_child(i)
+		button.get_node("Label").text = ""
 
 	
 	#Check Line 
 	for i in range (0,9):
-		if Global.sudoku_key[i][row]:
-			button.get_node("Label").text = "0"
-			print("test")
+		quadrant = quadranten[i]
+		button = quadrant.get_child(row)
+		button.get_node("Label").text = ""
 	
 	#Check Quadrant 
 	var start_row = 3 * (line / 3)
@@ -164,7 +165,8 @@ func check_notice(button, key):
 	
 	# Check the 3x3 quadrant
 	for i in range(start_row, start_row + 3):
+		quadrant = quadranten[i]
 		for j in range(start_col, start_col + 3):
-			if Global.sudoku_key[i][j]:
-				button.get_node("Label").text = "0"
+			button = quadrant.get_child(j)
+			button.get_node("Label").text = ""
 	
